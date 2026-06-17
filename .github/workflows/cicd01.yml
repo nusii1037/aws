@@ -32,3 +32,8 @@ jobs:
         run : |
           echo ${{secrets.MY_AGE}}
           echo ${{secrets.MY_PAY}}
+
+      - name: variables 변수 사용
+        run: |
+          echo ${{variables.MY_AGE}}
+          echo ${{variables.MY_PAY}}
